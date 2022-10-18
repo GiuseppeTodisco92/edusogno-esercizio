@@ -11,6 +11,4 @@ if($connessione === false){
     die("Errore durante la connessione: " . $connessione->connect_error);
 }
 
-echo "connessione avvenuta con successo : " . $connessione->host_info;
-
 ?>

@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(!isset($_SESSION['logged']) || $_SESSION['logged'] !== true){
     header("location: login.html");
@@ -16,14 +17,25 @@ if(!isset($_SESSION['logged']) || $_SESSION['logged'] !== true){
     <title>Area Privata</title>
 </head>
 <body>
+
     <header>
         <img class="logo" src="assets/img/logo.png" alt="">
     </header>
-    <h1>
-       <?php echo "ciao" . $_SESSION["email"];
-        ?>
-    </h1>
+    <div class="form">
+        <h2 class="form-title">
+            Ciao 
+        <?php echo $_SESSION['nome'] ;
+            ?> ecco i tuoi eventi
+        </h2>
+        <?php
+            foreach ($_SESSION['result_event'] as $value) {?>
+            <div class="card-event">
+            <?php echo $value['nome_evento']; ?> 
+            <?php echo $value['data_evento']; ?> 
+            </div>
+                
+        <?php }?>
+    </div>
 
-    
 </body>
 </html>
