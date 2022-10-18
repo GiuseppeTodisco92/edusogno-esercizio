@@ -27,14 +27,26 @@ if(!isset($_SESSION['logged']) || $_SESSION['logged'] !== true){
         <?php echo $_SESSION['nome'] ;
             ?> ecco i tuoi eventi
         </h2>
+        <div class="event-box">
+
         <?php
             foreach ($_SESSION['result_event'] as $value) {?>
-            <div class="card-event">
-            <?php echo $value['nome_evento']; ?> 
-            <?php echo $value['data_evento']; ?> 
+            <div class="card">
+                <div class="event-name">
+                    <?php echo $value['nome_evento']; ?> 
+                </div>
+                <div class="event-data">
+                <?php echo $value['data_evento']; ?> 
+                </div>
+                <div class="btn">join</div>
+
+         
             </div>
                 
         <?php }?>
+
+        </div>
+      
     </div>
 
 </body>

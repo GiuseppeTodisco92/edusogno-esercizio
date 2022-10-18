@@ -79,10 +79,45 @@ input{
     font-weight: 700;
     font-size: 20px;
     text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .account{
     text-align: center;
     margin-top: 2.5625rem;
 }
+.event-box{
+    display: flex;
+    gap: 67px; ;
+    margin-top: 6.25rem;
+}
+.event-name{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: #231F20;
+line-height: 99.5%;
+}
+.event-data{
+    color: #CCCCCC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.card{
+    width: 349px;
+height: 220px;
+left: 167px;
+top: 322px;
+border: 1px solid #134077;
+border-radius: 19px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1.25rem;
+padding: 1.5625rem;
+}
+
 
