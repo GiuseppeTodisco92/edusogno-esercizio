@@ -7,7 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* --------------
+    FONT-STYLE
+-----------------*/
 
+body{
+    font-family: 'DM Sans', sans-serif;
+}
 /* --------------
     HEADER
 -----------------*/
@@ -33,10 +39,51 @@ header{
     gap: 1.25rem;
     
 }
+.form-title{
+    color: #134077;
+}
 form{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 662px;
     gap: .625rem;
+    background: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 2.875rem 2.3125rem;
 }
+label{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #231F20;
+}
+input{
+    margin-top: 1.1875rem;
+    border: none;
+}
+
+.input-box{
+    border-bottom: 1px solid #2D224C;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
+}
+
+.btn{
+    background: #0057FF;
+    border-radius: 11px;
+    height: 3.6875rem;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform:uppercase;
+}
+
+.account{
+    text-align: center;
+    margin-top: 2.5625rem;
+}
+
 

@@ -7,10 +7,12 @@ $cognome = $connessione->real_escape_string($_POST['cognome']);
 $email = $connessione->real_escape_string($_POST['email']);
 $password = $connessione->real_escape_string($_POST['password']);
 
-$sql = "INSERT INTO utenti (nome, cognome, email, password) VALUES ('$nome','$cognome','$email','$password')";
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+$sql = "INSERT INTO utenti (nome, cognome, email, password) VALUES ('$nome','$cognome','$email','$hashed_password')";
 
 if($connessione->query($sql) === true){
-    echo "Registrazione effettuata con successo";
+    header("location: login.html");
 } else {
     echo "Errore durante registrazione utente $sql" . $connessione->error;
 }

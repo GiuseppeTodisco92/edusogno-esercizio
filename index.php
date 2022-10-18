@@ -16,24 +16,34 @@
     <main>
 
         <div class="form">
-        <h2>Crea il tuo account</h2>
+        <h2 class="form-title">Crea il tuo account</h2>
         <form action="register.php" method = "POST">
-            
-            <label for="nome">Inserisci il nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Mario" required>
 
-            <label for="cognome">Inserisci il cognome</label>
-            <input type="text" name="cognome" id="cognome" placeholder="Rossi" required>
+            <div class="input-box">
+                <label for="nome">Inserisci il nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Mario" required>
+            </div>
 
-            <label for="email">Inserisci la email</label>
-            <input type="text" name="email" id="email" placeholder="name@example.com" required>
+            <div class="input-box">
+                <label for="cognome">Inserisci il cognome</label>
+                <input type="text" name="cognome" id="cognome" placeholder="Rossi" required>
+            </div>
 
-            <label for="password">Inserisci la password</label>
-            <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
+            <div class="input-box">
+                <label for="email">Inserisci la email</label>
+                <input type="text" name="email" id="email" placeholder="name@example.com" required>
+            </div>
 
-            <input type="submit" value = "registrati">
+            <div class="input-box">
+                <label for="password">Inserisci la password</label>
+                <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
+            </div>
+
+            <input class="btn" type="submit" value = "registrati">
+            <p class="account">hai già un account? <a href="login.html"><strong>Accedi</strong></a> </p>
+        
         </form>
-        <a href="">hai già un account? <strong>Accedi</strong></a>
+  
         </div>
        
     </main>
