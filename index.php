@@ -47,13 +47,14 @@
             </div>
 
             <input class="btn" type="submit" value = "registrati">
-            <p class="account">hai già un account? <a href="login.html"><strong>Accedi</strong></a> </p>
+            <p class="account">Hai già un account? <a href="login.html"><strong>Accedi</strong></a> </p>
         
         </form>
         
         </div>
-       
     </main>
+
+    
     <script src="assets/js/script.js"></script>
 </body>
 
