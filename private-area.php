@@ -39,11 +39,10 @@ if(!isset($_SESSION['logged']) || $_SESSION['logged'] !== true){
                 <?php echo $value['data_evento']; ?> 
                 </div>
                 <div class="btn">join</div>
-
-         
             </div>
                 
         <?php }?>
+
 
         </div>
       

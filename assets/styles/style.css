@@ -129,8 +129,12 @@ input{
 ------------------*/
 .event-box{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 67px; ;
     margin-top: 6.25rem;
+    padding: 0px 3.125rem;
 }
 .event-name{
 font-style: normal;
@@ -146,8 +150,7 @@ line-height: 99.5%;
     font-size: 20px;
 }
 .card{
-    width: 349px;
-height: 220px;
+
 left: 167px;
 top: 322px;
 border: 1px solid #134077;
@@ -158,6 +161,7 @@ flex-direction: column;
 justify-content: center;
 gap: 1.25rem;
 padding: 1.5625rem;
+
 }
 
 /*----------------
