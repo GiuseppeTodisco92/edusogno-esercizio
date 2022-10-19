@@ -37,6 +37,7 @@ header{
     align-items: center;
     flex-direction: column;
     gap: 1.25rem;
+    padding-bottom: 6.25rem;
     
 }
 .form-title{
@@ -82,6 +83,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .account{
@@ -118,6 +120,17 @@ flex-direction: column;
 justify-content: center;
 gap: 1.25rem;
 padding: 1.5625rem;
+}
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#eye{
+    color: #0057FF;
+    cursor: pointer;
 }
 
 
