@@ -33,7 +33,7 @@
 
             <div class="input-box">
                 <label for="email">Inserisci la email</label>
-                <input type="text" name="email" id="email" placeholder="name@example.com" required>
+                <input type="email" name="email" id="email" placeholder="name@example.com" required>
             </div>
 
             <div class="input-box">
@@ -50,10 +50,11 @@
             <p class="account">hai già un account? <a href="login.html"><strong>Accedi</strong></a> </p>
         
         </form>
-  
+        
         </div>
        
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

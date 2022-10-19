@@ -13,6 +13,7 @@
 
 body{
     font-family: 'DM Sans', sans-serif;
+    background-color:#D9E5F3;
 }
 /* --------------
     HEADER
@@ -26,11 +27,16 @@ header{
     border-radius: 13px;
     display: flex;
     align-items: center;
+    background: #FFFFFF;
 }
 
 /* --------------
     MAIN
 -----------------*/
+main{
+    position: relative;
+}
+
 .form{
     padding-top: calc(259px - 132px);
     display: flex;
@@ -60,15 +66,20 @@ label{
     color: #231F20;
 }
 input{
-    margin-top: 1.1875rem;
+    outline: none;
     border: none;
 }
 
 .input-box{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
     border-bottom: 1px solid #2D224C;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.875rem;
+    padding: .625rem 0px;
+    gap: 10px;
 }
 
 .btn{
