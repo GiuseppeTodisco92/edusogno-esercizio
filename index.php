@@ -17,9 +17,9 @@
     </header>
     <main>
 
-        <div class="form">
+        <div class="form" >
         <h2 class="form-title">Crea il tuo account</h2>
-        <form action="register.php" method = "POST">
+        <form action="register.php" method = "POST" onSubmit="return validate();">
 
             <div class="input-box">
                 <label for="nome">Inserisci il nome</label>
